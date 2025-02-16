@@ -12,7 +12,7 @@ const PollingApp = () => {
 
   useEffect(() => {
     fetchPolls();
-    const interval = setInterval(fetchPolls, 1000);
+    const interval = setInterval(fetchPolls, 5000);
     return () => clearInterval(interval);
   }, []);
 
